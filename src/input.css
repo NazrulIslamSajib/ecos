@@ -89,7 +89,7 @@
   }
 
   .body-text {
-    @apply text-[18px] leading-[1.5] lg:text-[20px] font-normal text-body-text;
+    @apply text-[18px] leading-[1.5] lg:text-[18px] font-normal text-body-text;
   }
 
   .small-text {
