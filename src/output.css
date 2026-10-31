@@ -363,8 +363,14 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[9\] {
+    max-width: 9;
+  }
   .max-w-\[95\%\] {
     max-width: 95%;
+  }
+  .max-w-\[95\] {
+    max-width: 95;
   }
   .min-w-0 {
     min-width: 0px;
