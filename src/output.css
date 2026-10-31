@@ -209,12 +209,6 @@
   .bottom-0 {
     bottom: 0px;
   }
-  .bottom-2 {
-    bottom: calc(var(--spacing) * 2);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -286,9 +280,6 @@
   .size-8 {
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
@@ -492,12 +483,53 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-b-\[1\.5\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1.5;
+  }
+  .border-b-\[1\.5px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1.5px;
+  }
+  .border-b-\[2px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
   .border-b-cyan {
     border-bottom-color: var(--color-cyan);
+  }
+  .border-b-cyan\/20 {
+    border-bottom-color: color-mix(in srgb, #00AFD7 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-cyan) 20%, transparent);
+    }
+  }
+  .border-b-primary-blue {
+    border-bottom-color: var(--color-primary-blue);
+  }
+  .border-b-primary-blue\/20 {
+    border-bottom-color: color-mix(in srgb, #00587C 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-primary-blue) 20%, transparent);
+    }
+  }
+  .border-b-primary-blue\/40 {
+    border-bottom-color: color-mix(in srgb, #00587C 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-primary-blue) 40%, transparent);
+    }
   }
   .bg-cream-bold {
     background-color: var(--color-cream-bold);
@@ -681,6 +713,11 @@
     --tw-content: '•';
     content: var(--tw-content);
   }
+  @media (hover: hover) {
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+  }
   .focus\:ring-0:focus {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -688,6 +725,20 @@
   .focus\:outline-none:focus {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .focus-visible\:outline:focus-visible {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .focus-visible\:outline-2:focus-visible {
+    outline-style: var(--tw-outline-style);
+    outline-width: 2px;
+  }
+  .focus-visible\:outline-offset-4:focus-visible {
+    outline-offset: 4px;
+  }
+  .focus-visible\:outline-white:focus-visible {
+    outline-color: var(--color-white);
   }
   @media (width >= 40rem) {
     .sm\:max-w-\[60\%\] {
@@ -787,28 +838,28 @@
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("../assets/fonts/GT-Walsheim-Ultra-Light-Trial-BF651b7fc72b236.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Ultra-Light-Trial-BF651b7fc72b236.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("../assets/fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("../assets/fonts/GT-Walsheim-Medium-Trial-BF651b7fc728fb3.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Medium-Trial-BF651b7fc728fb3.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("./assets/fonts/GT-Walsheim-Bold-Trial-BF651b7fc737c57.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Bold-Trial-BF651b7fc737c57.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
