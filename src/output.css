@@ -714,6 +714,9 @@
     .lg\:flex {
       display: flex;
     }
+    .lg\:hidden {
+      display: none;
+    }
     .lg\:w-\[30\%\] {
       width: 30%;
     }
