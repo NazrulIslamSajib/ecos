@@ -753,6 +753,9 @@
     .\32 xl\:max-w-\[30\%\] {
       max-width: 30%;
     }
+    .\32 xl\:max-w-\[30s\%\] {
+      max-width: 30s%;
+    }
     .\32 xl\:max-w-\[36\%\] {
       max-width: 36%;
     }
@@ -958,10 +961,10 @@
       padding-inline: 32px;
     }
     @media (width >= 64rem) {
-      max-width: 95vw;
-    }
-    @media (width >= 64rem) {
       padding-inline: 20px;
+    }
+    @media (width >= 96rem) {
+      max-width: 80vw;
     }
   }
   .btn-primary {
