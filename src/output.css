@@ -31,7 +31,6 @@
     --color-primary-blue: #00587C;
     --color-cyan: #00AFD7;
     --color-body-text: #202020;
-    --color-cream: #FEF6EF;
     --color-cream-bold: #EEE8E8;
     --color-gray: #F0F0F0;
     --font-gt-walsheim: "GT Walsheim", sans-serif;
@@ -195,8 +194,29 @@
   .inset-0 {
     inset: 0px;
   }
+  .top-1 {
+    top: var(--spacing);
+  }
+  .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
   .top-3 {
     top: calc(var(--spacing) * 3);
+  }
+  .top-\[60\%\] {
+    top: 60%;
+  }
+  .top-\[60\] {
+    top: 60;
+  }
+  .top-\[70\%\] {
+    top: 70%;
+  }
+  .top-\[80\%\] {
+    top: 80%;
+  }
+  .top-\[80\] {
+    top: 80;
   }
   .right-1 {
     right: var(--spacing);
@@ -216,9 +236,6 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -230,9 +247,6 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
-  }
-  .mt-30 {
-    margin-top: calc(var(--spacing) * 30);
   }
   .mt-auto {
     margin-top: auto;
@@ -690,9 +704,6 @@
     }
   }
   @media (width >= 48rem) {
-    .md\:top-\[0\%\] {
-      top: 0%;
-    }
     .md\:top-\[50\%\] {
       top: 50%;
     }
@@ -702,14 +713,14 @@
     .md\:top-\[65\%\] {
       top: 65%;
     }
+    .md\:top-\[80\%\] {
+      top: 80%;
+    }
+    .md\:top-\[90\%\] {
+      top: 90%;
+    }
     .md\:right-1 {
       right: var(--spacing);
-    }
-    .md\:right-2 {
-      right: calc(var(--spacing) * 2);
-    }
-    .md\:right-4 {
-      right: calc(var(--spacing) * 4);
     }
     .md\:right-10 {
       right: calc(var(--spacing) * 10);
@@ -746,23 +757,11 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:top-\[0\%\] {
-      top: 0%;
-    }
-    .lg\:top-\[50\%\] {
-      top: 50%;
-    }
-    .lg\:top-\[60\%\] {
-      top: 60%;
-    }
     .lg\:top-\[70\%\] {
       top: 70%;
     }
     .lg\:top-\[80\%\] {
       top: 80%;
-    }
-    .lg\:mt-30 {
-      margin-top: calc(var(--spacing) * 30);
     }
     .lg\:block {
       display: block;
@@ -773,14 +772,8 @@
     .lg\:hidden {
       display: none;
     }
-    .lg\:w-\[0\%\] {
-      width: 0%;
-    }
     .lg\:w-\[20\%\] {
       width: 20%;
-    }
-    .lg\:w-\[25\%\] {
-      width: 25%;
     }
     .lg\:w-\[30\%\] {
       width: 30%;
@@ -1009,6 +1002,7 @@
   }
   .btn-primary {
     display: inline-flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-md);
