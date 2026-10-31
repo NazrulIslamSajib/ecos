@@ -713,8 +713,20 @@
     .lg\:w-\[30\%\] {
       width: 30%;
     }
+    .lg\:max-w-\[\%\] {
+      max-width: %;
+    }
+    .lg\:max-w-\[4\%\] {
+      max-width: 4%;
+    }
     .lg\:max-w-\[35\%\] {
       max-width: 35%;
+    }
+    .lg\:max-w-\[37\%\] {
+      max-width: 37%;
+    }
+    .lg\:max-w-\[38\%\] {
+      max-width: 38%;
     }
     .lg\:max-w-\[40\%\] {
       max-width: 40%;
