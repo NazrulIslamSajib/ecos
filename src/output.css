@@ -216,6 +216,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -227,6 +230,9 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
   }
   .mt-auto {
     margin-top: auto;
@@ -363,14 +369,8 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[9\] {
-    max-width: 9;
-  }
   .max-w-\[95\%\] {
     max-width: 95%;
-  }
-  .max-w-\[95\] {
-    max-width: 95;
   }
   .min-w-0 {
     min-width: 0px;
@@ -490,9 +490,6 @@
   }
   .border-b-cyan {
     border-bottom-color: var(--color-cyan);
-  }
-  .bg-cream {
-    background-color: var(--color-cream);
   }
   .bg-cream-bold {
     background-color: var(--color-cream-bold);
@@ -631,34 +628,8 @@
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.25) l a b / 10%));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-lg\/10 {
-    --tw-shadow-alpha: 10%;
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 10%)), 0 4px 6px -4px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 10%));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-lg\/40 {
-    --tw-shadow-alpha: 40%;
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%)), 0 4px 6px -4px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-lg {
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-sm {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-xl {
-    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -719,6 +690,12 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:top-\[0\%\] {
+      top: 0%;
+    }
+    .md\:top-\[50\%\] {
+      top: 50%;
+    }
     .md\:top-\[60\%\] {
       top: 60%;
     }
@@ -728,8 +705,20 @@
     .md\:right-1 {
       right: var(--spacing);
     }
+    .md\:right-2 {
+      right: calc(var(--spacing) * 2);
+    }
+    .md\:right-4 {
+      right: calc(var(--spacing) * 4);
+    }
+    .md\:right-10 {
+      right: calc(var(--spacing) * 10);
+    }
     .md\:h-auto {
       height: auto;
+    }
+    .md\:w-\[20\%\] {
+      width: 20%;
     }
     .md\:w-\[25\%\] {
       width: 25%;
@@ -757,6 +746,15 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:top-\[0\%\] {
+      top: 0%;
+    }
+    .lg\:top-\[50\%\] {
+      top: 50%;
+    }
+    .lg\:top-\[60\%\] {
+      top: 60%;
+    }
     .lg\:top-\[70\%\] {
       top: 70%;
     }
@@ -774,6 +772,15 @@
     }
     .lg\:hidden {
       display: none;
+    }
+    .lg\:w-\[0\%\] {
+      width: 0%;
+    }
+    .lg\:w-\[20\%\] {
+      width: 20%;
+    }
+    .lg\:w-\[25\%\] {
+      width: 25%;
     }
     .lg\:w-\[30\%\] {
       width: 30%;
