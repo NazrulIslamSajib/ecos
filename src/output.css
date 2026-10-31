@@ -194,41 +194,11 @@
   .inset-0 {
     inset: 0px;
   }
-  .top-1 {
-    top: var(--spacing);
-  }
-  .top-1\/2 {
-    top: calc(1 / 2 * 100%);
-  }
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
-  .top-\[8\%\] {
-    top: 8%;
-  }
-  .top-\[60\%\] {
-    top: 60%;
-  }
-  .top-\[60\] {
-    top: 60;
-  }
-  .top-\[70\%\] {
-    top: 70%;
-  }
-  .top-\[80\%\] {
-    top: 80%;
-  }
-  .top-\[80\] {
-    top: 80;
-  }
-  .top-\[82\%\] {
-    top: 82%;
-  }
   .top-\[84\%\] {
     top: 84%;
-  }
-  .top-\[85\%\] {
-    top: 85%;
   }
   .right-1 {
     right: var(--spacing);
@@ -239,8 +209,17 @@
   .bottom-0 {
     bottom: 0px;
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
@@ -307,6 +286,9 @@
   .size-8 {
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
@@ -716,32 +698,11 @@
     }
   }
   @media (width >= 48rem) {
-    .md\:top-\[50\%\] {
-      top: 50%;
-    }
-    .md\:top-\[60\%\] {
-      top: 60%;
-    }
     .md\:top-\[65\%\] {
       top: 65%;
     }
     .md\:top-\[69\%\] {
       top: 69%;
-    }
-    .md\:top-\[70\%\] {
-      top: 70%;
-    }
-    .md\:top-\[80\%\] {
-      top: 80%;
-    }
-    .md\:top-\[85\%\] {
-      top: 85%;
-    }
-    .md\:top-\[90\%\.\] {
-      top: 90%.;
-    }
-    .md\:top-\[90\%\] {
-      top: 90%;
     }
     .md\:right-1 {
       right: var(--spacing);
