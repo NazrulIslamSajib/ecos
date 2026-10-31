@@ -32,6 +32,7 @@
     --color-cyan: #00AFD7;
     --color-body-text: #202020;
     --color-cream: #FEF6EF;
+    --color-cream-bold: #EEE8E8;
     --color-gray: #F0F0F0;
     --font-gt-walsheim: "GT Walsheim", sans-serif;
   }
@@ -227,9 +228,6 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
-  .mt-20 {
-    margin-top: calc(var(--spacing) * 20);
-  }
   .mt-auto {
     margin-top: auto;
   }
@@ -368,9 +366,6 @@
   .max-w-\[95\%\] {
     max-width: 95%;
   }
-  .max-w-\[95\] {
-    max-width: 95;
-  }
   .min-w-0 {
     min-width: 0px;
   }
@@ -395,18 +390,6 @@
   .resize {
     resize: both;
   }
-  .list-inside {
-    list-style-position: inside;
-  }
-  .list-outside {
-    list-style-position: outside;
-  }
-  .list-disc {
-    list-style-type: disc;
-  }
-  .list-none {
-    list-style-type: none;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -418,9 +401,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .items-stretch {
     align-items: stretch;
@@ -508,6 +488,9 @@
   .bg-cream {
     background-color: var(--color-cream);
   }
+  .bg-cream-bold {
+    background-color: var(--color-cream-bold);
+  }
   .bg-cyan {
     background-color: var(--color-cyan);
   }
@@ -580,29 +563,14 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-12 {
-    padding-top: calc(var(--spacing) * 12);
-  }
   .pt-\[20px\] {
     padding-top: 20px;
-  }
-  .pb-12 {
-    padding-bottom: calc(var(--spacing) * 12);
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
-  }
-  .pl-0 {
-    padding-left: 0px;
-  }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
-  }
-  .pl-4 {
-    padding-left: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
@@ -684,10 +652,6 @@
     content: var(--tw-content);
     margin-right: calc(var(--spacing) * 1.5);
   }
-  .before\:mr-2::before {
-    content: var(--tw-content);
-    margin-right: calc(var(--spacing) * 2);
-  }
   .before\:text-xl::before {
     content: var(--tw-content);
     font-size: var(--text-xl);
@@ -737,6 +701,9 @@
     }
     .md\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    .md\:gap-10 {
+      gap: calc(var(--spacing) * 10);
     }
     .md\:gap-x-16 {
       column-gap: calc(var(--spacing) * 16);
