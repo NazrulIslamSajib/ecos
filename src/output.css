@@ -278,6 +278,9 @@
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
+  .aspect-\[6\/4\.5\] {
+    aspect-ratio: 6/4.5;
+  }
   .size-4 {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
@@ -395,6 +398,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .origin-\[100\%_100\%\] {
+    transform-origin: 100% 100%;
+  }
   .scale-2 {
     --tw-scale-x: 2%;
     --tw-scale-y: 2%;
@@ -417,6 +423,12 @@
     --tw-scale-x: 150%;
     --tw-scale-y: 150%;
     --tw-scale-z: 150%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-165 {
+    --tw-scale-x: 165%;
+    --tw-scale-y: 165%;
+    --tw-scale-z: 165%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-180 {
