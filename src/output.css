@@ -401,8 +401,23 @@
   .origin-\[100\%_100\%\] {
     transform-origin: 100% 100%;
   }
+  .origin-center {
+    transform-origin: center;
+  }
   .origin-left {
     transform-origin: 0;
+  }
+  .origin-right {
+    transform-origin: 100%;
+  }
+  .origin-top {
+    transform-origin: top;
+  }
+  .scale-15 {
+    --tw-scale-x: 15%;
+    --tw-scale-y: 15%;
+    --tw-scale-z: 15%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-50 {
     --tw-scale-x: 50%;
@@ -426,6 +441,18 @@
     --tw-scale-x: 175%;
     --tw-scale-y: 175%;
     --tw-scale-z: 175%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-185 {
+    --tw-scale-x: 185%;
+    --tw-scale-y: 185%;
+    --tw-scale-z: 185%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-195 {
+    --tw-scale-x: 195%;
+    --tw-scale-y: 195%;
+    --tw-scale-z: 195%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .transform {
@@ -568,11 +595,26 @@
   .object-cover {
     object-fit: cover;
   }
+  .object-\[0\%_60\%\] {
+    object-position: 0% 60%;
+  }
+  .object-\[2\%_60\%\] {
+    object-position: 2% 60%;
+  }
+  .object-\[50\%_60\%\] {
+    object-position: 50% 60%;
+  }
+  .object-\[100\%_60\%\] {
+    object-position: 100% 60%;
+  }
   .object-center {
     object-position: center;
   }
   .object-left {
     object-position: left;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
