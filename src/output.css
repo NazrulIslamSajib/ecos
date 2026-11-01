@@ -374,9 +374,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[95\%\] {
-    max-width: 95%;
-  }
   .min-w-0 {
     min-width: 0px;
   }
@@ -833,7 +830,7 @@
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("assets/fonts/GT-Walsheim-Ultra-Light-Trial-BF651b7fc72b236.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Light-Trial-BF651b7fc714941.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -984,16 +981,16 @@
     font-size: 16px;
     --tw-leading: 1.5;
     line-height: 1.5;
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
     color: var(--color-body-text);
   }
   .small-text-footer {
     font-size: 16px;
     --tw-leading: 1.5;
     line-height: 1.5;
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
     color: var(--color-primary-blue);
   }
   .medium-text {
