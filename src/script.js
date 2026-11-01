@@ -11,7 +11,40 @@ new Splide('#reasons-slider', {
       640: { perPage: 1 },
     },
 }).mount(); 
-*/ 
+*/  
+/*header*/ 
+/* header*/ 
+  const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    function setMenu(open) {
+      menu.hidden = !open;
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      iconOpen.classList.toggle('hidden', open);
+      iconClose.classList.toggle('hidden', !open);
+    }
+
+    toggle.addEventListener('click', () => setMenu(menu.hidden));
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.hidden) {
+        setMenu(false);
+        toggle.focus();
+      }
+    });
+
+    // Close when resizing up to desktop
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => {
+      if (e.matches) setMenu(false);
+    }); 
+
+
+
+    
 var splide = new Splide( '.splide', { 
   arrows:false, 
   pagination:true,
