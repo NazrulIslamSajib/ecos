@@ -970,8 +970,8 @@
     font-size: 18px;
     --tw-leading: 1.5;
     line-height: 1.5;
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
     color: var(--color-body-text);
     @media (width >= 64rem) {
       font-size: 18px;
