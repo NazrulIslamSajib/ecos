@@ -78,7 +78,7 @@ new Splide('#reasons-slider', {
 
 
     
-var splide = new Splide( '.splide', { 
+var splide = new Splide( '#reasons-slider', { 
   arrows:false, 
   pagination:true,
   type   : 'loop',
@@ -93,7 +93,8 @@ var splide = new Splide( '.splide', {
     },
 } );
 
-splide.mount(); 
+splide.mount();  
+
 
 /* testimonial */ 
  const testimonialSlider = new Splide('#testimonial-slider', {
@@ -118,7 +119,8 @@ splide.mount();
       const expanded = text.classList.toggle('line-clamp-4');
       btn.textContent = expanded ? 'Read more' : 'Read less';
     });
-  }); 
+  });  
+
 
   /* social section */ 
   new Splide('#social-slider', {
@@ -136,4 +138,6 @@ splide.mount();
       768:  { perPage: 3 },
       480:  { perPage: 2 },
     },
-  }).mount();
+  }).mount(); 
+
+  
