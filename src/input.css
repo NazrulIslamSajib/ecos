@@ -94,7 +94,7 @@
   }
 
   .small-text {
-    @apply text-[16px] leading-[1.5] font-light text-body-text;
+    @apply text-[16px] leading-[1.5] font-light text-body-text tracking-[0.2px];
   } 
    .small-text-footer {
     @apply text-[16px] leading-[1.5] font-light text-primary-blue;
